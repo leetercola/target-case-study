@@ -11,6 +11,7 @@ class CaItemCarousel extends Component {
         } = this.props;
 
         const settings = {
+            adaptiveHeight: false,
             arrows: true,
             dots: true,
             dotsClass: 'slick-dots slick-thumb',
@@ -35,7 +36,7 @@ class CaItemCarousel extends Component {
         settings.customPaging = (i) => (thumbnails[i]);
 
         return (
-            <div style={{minHeight: '600px'}} className="clearfix">
+            <div style={{height: '450px !important'}} className="clearfix">
                 <h1>{title}</h1>
                 <Slider {...settings}>
                         {slides}

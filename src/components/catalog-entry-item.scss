@@ -10,6 +10,14 @@
     bottom: 0px !important;
 }
 
+.slick-slider.slick-list {
+    min-height: 400px !important;
+}
+
+.slick-slider.slick-list.slick-track {
+    min-height: 400px !important;
+}
+
 .slick-slider {
     margin-top: 30px !important;
 }

@@ -79,6 +79,17 @@ class App extends Component {
                         <div>
                             Returns | {<p dangerouslySetInnerHTML={{__html:ReturnPolicy[0].legalCopy}}/>}
                         </div>
+                        <Row style={{marginBottom:"30px", marginTop:"5px"}}>
+                            <Col xs="4">
+                                <Button size="sm" color="secondary" block>Add to Registry</Button>
+                            </Col>
+                            <Col xs="4">
+                                <Button size="sm" color="secondary" block>Add to List</Button>
+                            </Col>
+                            <Col xs="4">
+                                <Button size="sm" color="secondary" block>Share</Button>
+                            </Col>
+                        </Row>
                         <div>
                             <h3>Product highlights</h3>
                             <ul>
