@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders add to cart if available online and purchasingChannelCode is 0 or 1 and does not show pick up in store 1`] = `"<Container />"`;
+
+exports[`renders pick up to store if inventoryStatus is InStore and purchasingChannelCode is 0 or 2 1`] = `"<Container />"`;

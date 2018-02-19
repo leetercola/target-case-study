@@ -17,6 +17,19 @@
 .App-intro {
   font-size: large; }
 
+.catalog-entry-view {
+  top: 40px;
+  position: relative; }
+
+.cta-buttons {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.carousel-wrapper {
+  margin-bottom: 30px; }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg); }
