@@ -4,6 +4,12 @@ import _ from 'lodash';
 import './catalog-entry-item.css';
 
 class CaItemCarousel extends Component {
+    componentDidMount () {
+        this.slider.innerSlider.setState({slideHeight:'450px'});
+        this.slider.forceUpdate();
+        this.forceUpdate();
+    }
+
     render() {
         const {
             Images,
@@ -16,6 +22,8 @@ class CaItemCarousel extends Component {
             dots: true,
             dotsClass: 'slick-dots slick-thumb',
             slidesToShow:1,
+            slidesToScroll:1,
+            lazyLoad: false,
             nextArrow: <NextArrow />,
             prevArrow: <PrevArrow />
         }
@@ -27,7 +35,7 @@ class CaItemCarousel extends Component {
 
         const slides = items.map((item, index) => {
             return (
-                <img src={item.image} alt={title + ' image ' + index} key={_.uniqueId('alternative-image')}/>
+                <div style={{minHeight:'450px'}}><img src={item.image} alt={title + ' image ' + index} key={_.uniqueId('alternative-image')}/></div>
             );
         });
 
@@ -36,10 +44,10 @@ class CaItemCarousel extends Component {
         settings.customPaging = (i) => (thumbnails[i]);
 
         return (
-            <div style={{height: '450px !important'}} className="clearfix">
+            <div>
                 <h1>{title}</h1>
-                <Slider {...settings}>
-                        {slides}
+                <Slider id="image_slider" {...settings} ref={(elem) => this.slider = elem}>
+                    {slides}
                 </Slider>
             </div>
         );

@@ -33,7 +33,6 @@ class App extends Component {
         const showAddToCart = inventoryStatus === 'Online' && (purchasingChannelCode === '0' || purchasingChannelCode === '1');
 
         const showPickUpInStore = inventoryStatus === 'InStore' && (purchasingChannelCode === '0' || purchasingChannelCode === '2');
-        console.log(showPickUpInStore);
 
         return (
             <Container className='catalog-entry-view'>

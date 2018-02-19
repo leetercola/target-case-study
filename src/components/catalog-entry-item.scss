@@ -10,12 +10,9 @@
     bottom: 0px !important;
 }
 
-.slick-slider.slick-list {
-    min-height: 400px !important;
-}
-
-.slick-slider.slick-list.slick-track {
-    min-height: 400px !important;
+#image_slider *{
+    min-height: 0;
+    min-width: 0;
 }
 
 .slick-slider {
