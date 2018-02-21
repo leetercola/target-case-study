@@ -8,7 +8,7 @@ afterEach = () => {
   shallow.unmount();
 };
 
-xit('renders add to cart if available online and purchasingChannelCode is 0 or 1 and does not show pick up in store', () => {
+it('renders add to cart if available online and purchasingChannelCode is 0 or 1 and does not show pick up in store', () => {
   const baseData = ItemData.CatalogEntryView[0];
   const output = shallow(<App ItemData={baseData} />);
   expect(output.find('#add_to_cart')).toBePresent();

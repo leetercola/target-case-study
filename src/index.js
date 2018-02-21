@@ -9,6 +9,6 @@ import registerServiceWorker from './registerServiceWorker';
 //If I was using Redux possibly reselect or custom parsing methods to trim the data
 import ItemData from './item-data.json';
 
-ReactDOM.render( < App ItemData={ItemData.CatalogEntryView[0]} / > , document.getElementById('root'));
+ReactDOM.render( <App ItemData={ItemData.CatalogEntryView[0]} /> , document.getElementById('root'));
 registerServiceWorker();
 
