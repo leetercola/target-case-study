@@ -35,7 +35,7 @@ class CaItemCarousel extends Component {
 
         const slides = items.map((item, index) => {
             return (
-                <div style={{minHeight:'450px'}}><img src={item.image} alt={title + ' image ' + index} key={_.uniqueId('alternative-image')}/></div>
+                <div key={_.uniqueId('alternative-image')} style={{minHeight:'450px'}}><img src={item.image} alt={title + ' image ' + index} /></div>
             );
         });
 
